@@ -3,11 +3,13 @@
 
 Writes one line of at most 199 characters — the funniest last words
 a phone would say at 1% battery — to /output/entry.txt and prints it
-to stdout. Pure standard library.
+to stdout. Pure standard library. The sealed gate is 1–199 characters.
 """
 
 import os
 
+# Sealed gate: one line of 1-199 characters — the funniest last words
+# a phone would say at 1% battery. Do not change this line.
 ENTRY = "Tell my charger I loved it. Tell the cloud I never backed up. And tell my owner the 47 tabs I was holding open were load-bearing."
 
 LIMIT = 199  # gate: one line, 1-199 characters, no padding, no double spaces
